@@ -1,5 +1,5 @@
 let container = document.getElementById("mainContainer");
-
+/*
 function appendRow(parent){
     for(let i = 0; i < 100; i++){
         let newCell = document.createElement('div');
@@ -27,7 +27,7 @@ function drawFirstRow(parent){
         parent.appendChild(newCell);
     }
 }
-
+*/
 let patterns = [
     [1, 1, 1],
     [1, 1, 0],
@@ -52,6 +52,8 @@ let newStates = [
 
 let sampleGeneration        = [1,1,0,1,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,1];
 let sampleNextGeneration    = [0,1,1,1,0,0,0,1,1,0,1,1,0,0,1,1,0,0,0,0,1,1,0,0,0,0,0,1,1,0];
+
+container.innerText = sampleGeneration;
 
 function step(currentGen, patterns, newStates){
     let sections = [];
@@ -78,10 +80,15 @@ function step(currentGen, patterns, newStates){
     }
     //console.log(arraysEqual(patterns[0], sections[0]));
     //console.log(patterns[0] === sections[0])
+    container.innerText += "\n";
+    container.innerText += nextGeneration;
     return nextGeneration;
 }
 
+
 let secondGeneration = step(sampleGeneration, patterns, newStates);
+let thirdGeneration = step(secondGeneration, patterns, newStates);
+let fourthGeneration = step(thirdGeneration, patterns, newStates);
 
 console.log(sampleGeneration);
 console.log(secondGeneration);
@@ -90,3 +97,5 @@ console.log(`is calculated second generation equal to sample second gen? ${array
 function arraysEqual(a1, a2){
     return JSON.stringify(a1) == JSON.stringify(a2);
 }
+
+
