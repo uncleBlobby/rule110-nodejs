@@ -11,6 +11,8 @@ This is my first successful implementation of Rule 110.
 
 The implementation accepts an unlimited input of bits and computes a set of digital progeny based on Rule 110.  Rule 110 states that any particular set of three input bits will result in a particular output bit centered at a location dependent upon the location of the input pattern.
 
+![Rule 110 Patterns](https://upload.wikimedia.org/wikipedia/commons/b/b5/One-d-cellular-automaton-rule-110.gif)
+
 For instance, a bit string as follows   : [0, 1, 1, 0, 1, 0]
 
 Will result in the following output     : [1, 1, 1, 1, 1, 0]
