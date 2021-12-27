@@ -22,6 +22,8 @@ according to the canonical [Rule 110 patterns](https://en.wikipedia.org/wiki/Rul
 
 Input seed: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1];
 
+Output:
+
 ![Rule 110 Output Image](https://i.imgur.com/Y2WNbH9.png)
 
 
