@@ -21,3 +21,6 @@ according to the canonical [Rule 110 patterns](https://en.wikipedia.org/wiki/Rul
 ![Rule 110 Output Image](https://i.imgur.com/Y2WNbH9.png)
 
 
+Other relevant information:
+
+Rudy Rucker -- [The Lifebox, The Seashell, and The Soul](https://www.rudyrucker.com/lifebox/)
