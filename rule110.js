@@ -56,12 +56,18 @@ let rowCounter = 0;
 
 function step(currentGen, patterns, newStates){
 
+    // while loop runs function recursively until row counter target is reached
     while(rowCounter < 50){
+        // each iteration, initialize empty array to hold 3 bit sections of generation data
+        // ** sections is an array of arrays **
         let sections = [];
-        findAllSections(currentGen, i = 0, sections);
+        // find all 3 bit sections of current generation, update sections array
+        sections = findAllSections(currentGen, i = 0, sections);
+        // computes the next generation based on all sections of current generation, checking for patterns and pushing newStates to next generation
         let nextGeneration = computeOutput(sections, patterns);
-
+        // increments counter
         rowCounter++;
+        // prints output of current generation as pretty string for user visualization
         console.log(genArrayToString(nextGeneration));
         step(nextGeneration, patterns, newStates);
     }
@@ -92,6 +98,7 @@ function findAllSections(currentGen, i, sections){
     sections.push(getSlice(currentGen, i = 0, "first"));
     findMiddleSections(currentGen, sections);
     sections.push(getSlice(currentGen, i = 0, "last"));
+    return sections;
 }
 
 function getSlice(currentGen, i = 0, position){
