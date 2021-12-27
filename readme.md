@@ -20,6 +20,8 @@ Will result in the following output     : [1, 1, 1, 1, 1, 0]
 This implementation will take a starting input (seed) and produce any number of iterative generations based on Rule 110.  Some inputs will produce interesting (ie: Class 4) results, as pictured below
 according to the canonical [Rule 110 patterns](https://en.wikipedia.org/wiki/Rule_110).
 
+Input seed: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1];
+
 ![Rule 110 Output Image](https://i.imgur.com/Y2WNbH9.png)
 
 
