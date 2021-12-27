@@ -16,7 +16,7 @@ const sampleNextGeneration    = [0,1,1,1,0,0,0,1,1,0,1,1,0,0,1,1,0,0,0,0,1,1,0,0
 let newSeed                 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1];
 
 //  patterns
-//  patterns are the possible inputs for the machine
+//  all the possible 3 bit input slices
 
 let patterns = [
     [1, 1, 1],
@@ -31,6 +31,9 @@ let patterns = [
 
 //  newStates
 //  newStates are the outputs for the machine, corresponding to each pattern of input
+//  each pattern in the input generation will produce the corresponding output state center bit
+//  ex:     input pattern   = [1, 1, 1]
+//          output bit      = [ , 0,  ]
 
 let newStates = [
     0,
